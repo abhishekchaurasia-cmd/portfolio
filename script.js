@@ -464,23 +464,6 @@ function initParallax() {
         );
     });
 
-    // About section image parallax
-    const aboutImg = document.querySelector('.about__image-wrapper img');
-    if (aboutImg) {
-        gsap.fromTo(aboutImg,
-            { yPercent: -8 },
-            {
-                yPercent: 8,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: '.about__content',
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: 1
-                }
-            }
-        );
-    }
 }
 
 
@@ -579,7 +562,7 @@ function initCursorTrail() {
     animateCursor();
 
     // Enlarge cursor on interactive elements
-    const hoverEls = document.querySelectorAll('a, button, .project-card, .skill-card, .social-card, .experience-card');
+    const hoverEls = document.querySelectorAll('a, button, .project-card, .skill-card, .social-card, .experience-card, .team-card');
     hoverEls.forEach(el => {
         el.addEventListener('mouseenter', () => {
             cursor.style.width = '50px';
