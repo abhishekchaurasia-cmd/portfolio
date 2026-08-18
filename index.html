@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek — Full Stack Developer</title>
+  <!-- TEAM NAME: appears here, in .topbar__logo, .hero__name and the footer copyright. -->
+  <title>LET-VAR-CONST — Full Stack Development Team</title>
   <meta name="description"
-    content="Official portfolio of Abhishek — Full Stack Developer crafting premium digital experiences.">
+    content="LET-VAR-CONST — a full stack development team building AI, cybersecurity, blockchain and web products end to end.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,11 +44,13 @@
 
   <!-- ========== TOP BAR ========== -->
   <header class="topbar">
-    <a href="#" class="topbar__logo">Abhi<span>.</span></a>
+    <!-- TEAM NAME -->
+    <a href="#" class="topbar__logo">let-var-<span>const</span></a>
     <nav class="topbar__nav">
       <a href="#hero">Home</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
+      <a href="#team">Team</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -89,6 +92,7 @@
       <a href="#hero" data-nav>Home</a>
       <a href="#projects" data-nav>Projects</a>
       <a href="#about" data-nav>About</a>
+      <a href="#team" data-nav>Team</a>
       <a href="#skills" data-nav>Skills</a>
       <a href="#experience" data-nav>Experience</a>
       <a href="#contact" data-nav>Contact</a>
@@ -109,18 +113,20 @@
       <canvas id="heroCanvas"></canvas>
     </div>
     <div class="hero__content">
-      <h1 class="hero__name">
-        <span class="line"><span class="line-inner">Abhishek</span></span>
+      <h1 class="hero__name hero__name--wordmark">
+        <!-- TEAM NAME -->
+        <span class="line"><span class="line-inner">let<span class="dash">-</span>var<span
+              class="dash">-</span>const</span></span>
       </h1>
-      <p class="hero__title">Full Stack Developer</p>
+      <p class="hero__title">Full Stack Development Team</p>
       <div class="hero__stats">
         <div class="hero__stat">
-          <div class="hero__stat-number" data-count="1">0</div>
-          <div class="hero__stat-label">Year Experience</div>
+          <div class="hero__stat-number" data-count="7">0</div>
+          <div class="hero__stat-label">Team Members</div>
         </div>
         <div class="hero__stat">
           <div class="hero__stat-number" data-count="10">0</div>
-          <div class="hero__stat-label">Projects Completed</div>
+          <div class="hero__stat-label">Projects Delivered</div>
         </div>
         <div class="hero__stat">
           <div class="hero__stat-number" data-count="8">0</div>
@@ -142,10 +148,11 @@
   <section class="section" id="projects">
     <div class="section__header reveal-up">
       <div class="section__split-title">
-        <span class="top-word">My</span>
+        <span class="top-word">Our</span>
         <span class="bottom-word">Projects</span>
       </div>
-      <p class="section__subtitle">Most recent work, case studies and projects built with cutting-edge technologies.</p>
+      <p class="section__subtitle">Recent work the team has shipped — case studies and products built with
+        cutting-edge technologies.</p>
     </div>
     <div class="projects__grid">
       <!-- 1. VoidShare -->
@@ -368,23 +375,26 @@
     <div class="section__header reveal-up">
       <div class="section__split-title">
         <span class="top-word">About</span>
-        <span class="bottom-word">Me</span>
+        <span class="bottom-word">Us</span>
       </div>
     </div>
-    <div class="about__content">
-      <div class="about__image-wrapper reveal-left">
-        <img src="img.jpg" alt="Profile Photo" class="about__img-custom" loading="lazy">
-      </div>
-      <div class="about__text reveal-right">
-        <h3>Passionate about building <span>digital experiences</span> that matter.</h3>
-        <p>I'm a Full Stack Developer with a passion for creating beautiful, performant web applications. I specialize
-          in modern JavaScript frameworks, backend architecture, and UI/UX design. With a strong interest in
-          <strong>AI/ML</strong> and <strong>Cybersecurity</strong>, I build applications that are not only intelligent
-          but also robustly secure.
+    <div class="about__content about__content--full">
+      <div class="about__text reveal-up">
+        <h3>This portfolio is a record of the <span>things we actually shipped</span>.</h3>
+        <p>Everything you scrolled past above started as a problem worth solving, not a demo. <strong>VoidShare</strong>
+          came out of wanting file sharing where the server never sees your data. <strong>AI-WAF</strong> and the
+          <strong>Cyber Tools</strong> suite grew from real traffic logs and the attack patterns hiding inside them.
+          <strong>Agri-Mitra</strong> pushed us into blockchain because supply-chain trust can't be bolted on later.
+          <strong>Life Replay</strong>, <strong>AI Object Tracking</strong> and the <strong>AI Wrapper Platform</strong>
+          are where we took machine learning out of notebooks and into something a person can actually open and use.
         </p>
-        <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-          sharing knowledge through tech blogs and community meetups.</p>
-        <div class="about__highlights">
+        <p>Across those builds the work runs end to end — research and architecture, backend and APIs, model training,
+          security hardening, interface and motion design, then deployment and the unglamorous maintenance that follows.
+          Some of it is solo work; most of it is a small team splitting the hard parts and reviewing each other's code
+          until it holds up.</p>
+        <p>What ties the projects together is a bias toward finishing: intelligent where intelligence earns its place,
+          secure by default, and fast enough that nobody has to wait on it. Below are the people behind that work.</p>
+        <div class="about__highlights about__highlights--wide">
           <div class="about__highlight">
             <div class="about__highlight-icon">🤖</div>
             <div class="about__highlight-title">AI & ML</div>
@@ -412,6 +422,216 @@
 
   <div class="accent-line"></div>
 
+  <!-- ========== TEAM SECTION ==========
+       HOW TO EDIT: each <article class="team-card"> is one member.
+       Replace: __avatar span (initials), __name, __role, __bio, the __tag spans,
+       and the two social <a href="#"> links. Duplicate a card to add a member. -->
+  <section class="section" id="team">
+    <div class="section__header reveal-up">
+      <div class="section__split-title">
+        <span class="top-word">The</span>
+        <span class="bottom-word">Team</span>
+      </div>
+      <p class="section__subtitle">The people behind these projects — each owning a piece of the stack, from models and
+        security to interface and infrastructure.</p>
+    </div>
+    <div class="team__grid">
+
+      <!-- 1. Abhishek Kumar Chaurasia -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>AC</span></div>
+          <span class="team-card__badge">Lead</span>
+        </div>
+        <h3 class="team-card__name">Abhishek Kumar Chaurasia</h3>
+        <div class="team-card__role">Full Stack Developer &amp; Team Lead</div>
+        <p class="team-card__bio">Sets the architecture and ties the stack together — APIs, data layer, deployment and the final polish before anything ships.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">React</span>
+          <span class="team-card__tag">Node.js</span>
+          <span class="team-card__tag">System Design</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="https://github.com/abhishek252003" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-kumar-chaurasia-28305525a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 2. Jashan Sharma -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>JS</span></div>
+        </div>
+        <h3 class="team-card__name">Jashan Sharma</h3>
+        <div class="team-card__role">AI / ML Engineer</div>
+        <p class="team-card__bio">Owns the model side — data pipelines, training and evaluation behind the vision and recommendation work in Life Replay and AI Object Tracking.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Python</span>
+          <span class="team-card__tag">TensorFlow</span>
+          <span class="team-card__tag">OpenCV</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 3. Agam Malik -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>AM</span></div>
+        </div>
+        <h3 class="team-card__name">Agam Malik</h3>
+        <div class="team-card__role">Cybersecurity Engineer</div>
+        <p class="team-card__bio">Breaks things before anyone else can — threat modelling, pentesting and the detection logic powering AI-WAF and the Cyber Tools suite.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Pentesting</span>
+          <span class="team-card__tag">Networking</span>
+          <span class="team-card__tag">Threat Intel</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 4. Harbhajan Singh -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>HS</span></div>
+        </div>
+        <h3 class="team-card__name">Harbhajan Singh</h3>
+        <div class="team-card__role">Frontend &amp; UI/UX Designer</div>
+        <p class="team-card__bio">Turns rough flows into interfaces people enjoy using — design systems, motion and the front-end build across every project here.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Figma</span>
+          <span class="team-card__tag">GSAP</span>
+          <span class="team-card__tag">Three.js</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 5. Arpit Kaul -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>AK</span></div>
+        </div>
+        <h3 class="team-card__name">Arpit Kaul</h3>
+        <div class="team-card__role">Backend Engineer</div>
+        <p class="team-card__bio">Builds the services everything else leans on — REST APIs, database schemas, auth and the integrations that keep the platforms talking.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Node.js</span>
+          <span class="team-card__tag">MongoDB</span>
+          <span class="team-card__tag">REST APIs</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 6. Santosh Mishra -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>SM</span></div>
+        </div>
+        <h3 class="team-card__name">Santosh Mishra</h3>
+        <div class="team-card__role">Blockchain Developer</div>
+        <p class="team-card__bio">Writes and audits the smart contracts — the on-chain traceability layer that makes Agri-Mitra's supply chain verifiable end to end.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Solidity</span>
+          <span class="team-card__tag">Ethereum</span>
+          <span class="team-card__tag">Web3</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 7. Aniket Adadwal -->
+      <article class="team-card reveal-up">
+        <div class="team-card__top">
+          <div class="team-card__avatar"><span>AA</span></div>
+        </div>
+        <h3 class="team-card__name">Aniket Adadwal</h3>
+        <div class="team-card__role">DevOps &amp; QA Engineer</div>
+        <p class="team-card__bio">Keeps releases boring — CI/CD pipelines, containers, monitoring and the test coverage that catches problems before users do.</p>
+        <div class="team-card__tags">
+          <span class="team-card__tag">Docker</span>
+          <span class="team-card__tag">AWS</span>
+          <span class="team-card__tag">CI/CD</span>
+        </div>
+        <div class="team-card__socials">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="accent-line"></div>
+
   <!-- ========== SKILLS CAROUSEL SECTION ========== -->
   <section class="section skills" id="skills">
     <div class="section__header reveal-up">
@@ -419,7 +639,8 @@
         <span class="top-word">Skills</span>
         <span class="bottom-word">Hall of Fame</span>
       </div>
-      <p class="section__subtitle">Technologies and tools I use to bring ideas to life — from concept to deployment.</p>
+      <p class="section__subtitle">Technologies and tools the team uses to bring ideas to life — from concept to
+        deployment.</p>
     </div>
     <div class="skills__carousel-wrapper">
       <div class="skills__carousel" id="skillsCarousel">
@@ -531,8 +752,8 @@
   <section class="cta-section" id="contact">
     <h2 class="cta-section__heading reveal-up">Let's Build<br>Something <span
         style="color: var(--accent);">Amazing</span></h2>
-    <p class="cta-section__sub reveal-up">I'm always open to discussing new projects, creative ideas, or opportunities
-      to be part of your vision.</p>
+    <p class="cta-section__sub reveal-up">We're always open to discussing new projects, creative ideas, or
+      opportunities to be part of your vision. Tell us what you're building and we'll bring the right people to it.</p>
     <a href="mailto:abhi.abhishek2111@gmail.com" class="cta-section__btn reveal-up">
       Get In Touch
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -551,30 +772,30 @@
         <span class="top-word">Experience</span>
         <span class="bottom-word">&amp; Journey</span>
       </div>
-      <p class="section__subtitle">Professional experience and collaborations across various industries and
-        technologies.</p>
+      <p class="section__subtitle">How the team has grown, what we've delivered, and the way we work with the people who
+        hire us.</p>
     </div>
     <div class="experience__content">
       <div class="experience-card reveal-up">
         <div class="experience-card__period">2024 — Present</div>
-        <div class="experience-card__role">Senior Full Stack Developer</div>
-        <div class="experience-card__company">Tech Startup Inc.</div>
-        <div class="experience-card__desc">Leading the development of scalable web applications, architecting
-          microservices, and mentoring junior developers.</div>
+        <div class="experience-card__role">Full Stack Product Delivery</div>
+        <div class="experience-card__company">Startup &amp; Client Engagements</div>
+        <div class="experience-card__desc">We take products from architecture to production — services, data layer,
+          interface and deployment — with one owner per area and shared code review across the team.</div>
       </div>
       <div class="experience-card reveal-up">
         <div class="experience-card__period">2023 — 2024</div>
-        <div class="experience-card__role">Frontend Developer</div>
-        <div class="experience-card__company">Digital Agency Co.</div>
-        <div class="experience-card__desc">Built interactive websites and web apps for premium clients using React,
-          Next.js, and GSAP animations.</div>
+        <div class="experience-card__role">Applied AI &amp; Security Builds</div>
+        <div class="experience-card__company">Research-Led Projects</div>
+        <div class="experience-card__desc">Our ML and security engineers paired on AI-WAF, Life Replay and AI Object
+          Tracking, turning models and threat research into tools people can actually run.</div>
       </div>
       <div class="experience-card reveal-up">
         <div class="experience-card__period">2022 — 2023</div>
-        <div class="experience-card__role">Freelance Developer</div>
-        <div class="experience-card__company">Self-Employed</div>
-        <div class="experience-card__desc">Delivered full-stack solutions for startups and small businesses, from
-          concept to deployment and maintenance.</div>
+        <div class="experience-card__role">Collaborative &amp; Freelance Work</div>
+        <div class="experience-card__company">Startups &amp; Small Businesses</div>
+        <div class="experience-card__desc">Where the team formed — delivering full-stack solutions together, from
+          concept through deployment and the maintenance that follows.</div>
       </div>
     </div>
   </section>
@@ -647,6 +868,7 @@
           <a href="#hero">Home</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#team">Team</a>
           <a href="#skills">Skills</a>
         </div>
         <div class="footer__link-group">
@@ -659,7 +881,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__copyright">&copy; 2025 Abhishek. All rights reserved.</div>
+      <!-- TEAM NAME -->
+      <div class="footer__copyright">&copy; 2025 LET-VAR-CONST. All rights reserved.</div>
       <div class="footer__email"><a href="mailto:abhi.abhishek2111@gmail.com">abhi.abhishek2111@gmail.com</a></div>
     </div>
   </footer>
